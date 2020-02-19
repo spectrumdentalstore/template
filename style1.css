@@ -826,15 +826,16 @@ a:hover {
 	font-size: 14px;
 	font-family: 'PT Sans', sans-serif;
 }
-.center_content li {
+.tab-list {
   color: #f00;
 }
-.center_content li span {
+.tab-list span {
   color: #000;
 }
 .center_content p span {
   color: #f00;
 }
+
 @media all and (max-width: 600px) {
 	.center_content {
 		padding: 10px 10px;
