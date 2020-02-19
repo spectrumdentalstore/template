@@ -696,7 +696,7 @@ a:active ,
 a:hover {
 	text-decoration: none;
 
-	color: #fff;
+	color: #960;
 }
 
 /* ---------------------- Category -----------------------------*/
@@ -826,8 +826,14 @@ a:hover {
 	font-size: 14px;
 	font-family: 'PT Sans', sans-serif;
 }
-.center_content span {
-	color: #f00;
+.center_content li {
+  color: #f00;
+}
+.center_content li span {
+  color: #000;
+}
+.center_content p span {
+  color: #f00;
 }
 @media all and (max-width: 600px) {
 	.center_content {
