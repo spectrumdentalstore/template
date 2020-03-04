@@ -842,12 +842,16 @@ a:hover {
 	font-size: 14px;
 	font-family: 'PT Sans', sans-serif;
 }
-.tab-list {
+.tab-list, .desc-list {
   color: #f00;
 }
 .tab-list span {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
+}
+.desc-list span {
+  color: #000;
+  font-size: 16px;	
 }
 .center_content p span {
   color: #f00;
@@ -858,7 +862,7 @@ a:hover {
 		padding: 10px 10px;
 		width: 90%;
 	}
-	.tab-list {
+	.tab-list, .desc-list {
 		margin-left: -20px;
 	}
 }
@@ -1175,12 +1179,12 @@ section {
 	text-shadow: 0 1px 2px #777;
 }
 
-.tab-list {
+.tab-list, .desc-list {
 	text-align: left;
 
 	line-height: 2 !important;
 	font-weight: bold;
-	font-size: 14px;
+	/*font-size: 14px;*/
 	font-family: 'PT Sans', sans-serif;
 }
 
