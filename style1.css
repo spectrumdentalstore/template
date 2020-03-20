@@ -6,7 +6,7 @@ body {
 #wrapper {
 	margin: 0 auto;
 	padding: 5px;
-	overflow:  hidden;
+
 	font-family: Arial;
 }
 
@@ -842,19 +842,12 @@ a:hover {
 	font-size: 14px;
 	font-family: 'PT Sans', sans-serif;
 }
-.tab-list, .desc-list {
+.tab-list {
   color: #f00;
 }
 .tab-list span {
   color: #000;
-  font-size: 15px;
-}
-.desc-list span {
-  color: #000;
-  font-size: 16px;	
-}
-.center_content p {
-	font-size: 16px;
+  font-size: 20px;
 }
 .center_content p span {
   color: #f00;
@@ -865,7 +858,7 @@ a:hover {
 		padding: 10px 10px;
 		width: 90%;
 	}
-	.tab-list, .desc-list {
+	.tab-list {
 		margin-left: -20px;
 	}
 }
@@ -1142,7 +1135,6 @@ input.selector15:checked ~ label .img15 img.preview15 {
 }
 
 .tab_container {
-	/*border: 1px solid red !important;*/
 	overflow: hidden;
 	border-radius: 5px;
 	position: relative;
@@ -1183,12 +1175,12 @@ section {
 	text-shadow: 0 1px 2px #777;
 }
 
-.tab-list, .desc-list {
+.tab-list {
 	text-align: left;
 
 	line-height: 2 !important;
 	font-weight: bold;
-	/*font-size: 14px;*/
+	font-size: 14px;
 	font-family: 'PT Sans', sans-serif;
 }
 
