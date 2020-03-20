@@ -6,7 +6,7 @@ body {
 #wrapper {
 	margin: 0 auto;
 	padding: 5px;
-
+	overflow:  hidden;
 	font-family: Arial;
 }
 
@@ -414,9 +414,6 @@ a:active {
 	.menu_content li {
 		width: 75px !important;
 	}
-	.menu_content li a {
-		font-size: 12px !important;
-	}
 }
 @media all and (max-width: 400px) {
 	.menu_content li {
@@ -424,9 +421,6 @@ a:active {
 		width: 68px !important;
 
 		line-height: 55px;
-	}
-	.menu_content li a {
-		font-size: 11px !important;
 	}
 }
 @media all and (max-width: 320px) {
@@ -437,6 +431,7 @@ a:active {
 		line-height: 25px;
 	}
 }
+
 .menu_content li a {
 	text-decoration: none;
 
@@ -449,7 +444,17 @@ a:active {
 		font-size: 13px;
 	}
 }
-
+@media all and (max-width: 500px) {
+	.menu_content li a {
+		white-space: nowrap;
+		font-size: 12px !important;
+	}
+}
+@media all and (max-width: 400px) {
+	.menu_content li a {
+		font-size: 10px !important;
+	}
+}
 .menu_content  a:link ,
 .menu_content  a:visited ,
 .menu_content  a:active {
@@ -797,14 +802,25 @@ a:hover {
 .center_titel {
 	border-radius: 5px 5px 0 0;
 	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 15px;
-	height: 44px;
+	padding-right: 5px;
+	/*height: 44px;*/
 	background: #ebebeb;
 
 	color: #585858;
-	line-height: 2.8;
+	line-height: 1.4;
 	font-weight: bold;
 	font-size: 16px;
+}
+@media all and (max-width: 700px) {
+	.center_titel {
+		/*color: red;*/
+		padding-top: 8px;
+		padding-bottom: 8px;
+		font-size: 15px;
+	}
 }
 
 .center_content {
@@ -826,11 +842,19 @@ a:hover {
 	font-size: 14px;
 	font-family: 'PT Sans', sans-serif;
 }
-.tab-list {
+.tab-list, .desc-list {
   color: #f00;
 }
 .tab-list span {
   color: #000;
+  font-size: 15px;
+}
+.desc-list span {
+  color: #000;
+  font-size: 16px;	
+}
+.center_content p {
+	font-size: 16px;
 }
 .center_content p span {
   color: #f00;
@@ -841,14 +865,14 @@ a:hover {
 		padding: 10px 10px;
 		width: 90%;
 	}
-	.tab-list {
+	.tab-list, .desc-list {
 		margin-left: -20px;
 	}
 }
 
 .center_content li {
 	line-height: 23px;
-	font-size: 10px;
+	font-size: 16px;
 }
 
 .center_content img {
@@ -1118,6 +1142,7 @@ input.selector15:checked ~ label .img15 img.preview15 {
 }
 
 .tab_container {
+	/*border: 1px solid red !important;*/
 	overflow: hidden;
 	border-radius: 5px;
 	position: relative;
@@ -1158,12 +1183,12 @@ section {
 	text-shadow: 0 1px 2px #777;
 }
 
-.tab-list {
+.tab-list, .desc-list {
 	text-align: left;
 
 	line-height: 2 !important;
 	font-weight: bold;
-	font-size: 14px;
+	/*font-size: 14px;*/
 	font-family: 'PT Sans', sans-serif;
 }
 
